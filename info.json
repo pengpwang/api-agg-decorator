@@ -1,0 +1,253 @@
+{
+	"apiList": [
+		{
+			"description": "获取服务器时间",
+			"detail": "覆盖apiInfo",
+			"encryptionOnly": false,
+			"groupName": "node_time",
+			"groupOwner": "kedi",
+			"methodName": "node_time.getServerTime",
+			"methodOwner": "wpp",
+			"mt": "activityNotify.addActivityNotify",
+			"needVerify": false,
+			"origin": "node",
+			"parameterInfoList": [
+				{
+					"description": "spuId",
+					"injectOnly": false,
+					"isRequired": true,
+					"isRsaEncrypt": false,
+					"name": "spuId",
+					"sequence": "",
+					"type": "int",
+					"isList": false
+				},
+				{
+					"description": "contentType",
+					"injectOnly": false,
+					"isRequired": false,
+					"isRsaEncrypt": false,
+					"name": "contentType",
+					"sequence": "",
+					"type": "string",
+					"isList": false
+				},
+				{
+					"description": "分页",
+					"injectOnly": false,
+					"isRequired": true,
+					"isRsaEncrypt": false,
+					"name": "page",
+					"sequence": "",
+					"type": "Api_NodeNEWCROWDFUNDING_PageParameter",
+					"isList": false
+				}
+			],
+			"reqStructList": [
+				{
+					"fieldList": [
+						{
+							"desc": "记录偏移量",
+							"isList": false,
+							"name": "offset",
+							"type": "int"
+						},
+						{
+							"desc": "返回记录最大数量",
+							"isList": false,
+							"name": "limit",
+							"type": "int"
+						}
+					],
+					"groupName": "node_time",
+					"name": "Api_NodeNEWCROWDFUNDING_PageParameter"
+				}
+			],
+			"respStructList": [
+				{
+					"fieldList": [
+						{
+							"desc": "图片链接",
+							"isList": false,
+							"name": "url",
+							"type": "string"
+						},
+						{
+							"desc": "图宽度",
+							"isList": false,
+							"name": "width",
+							"type": "int"
+						},
+						{
+							"desc": "图高度",
+							"isList": false,
+							"name": "height",
+							"type": "int"
+						},
+						{
+							"desc": "字符串数组",
+							"isList": true,
+							"name": "strArr",
+							"type": "string"
+						},
+						{
+							"desc": "测试",
+							"isList": false,
+							"name": "spu",
+							"type": "Api_NodegetImageList_Params"
+						},
+						{
+							"desc": "测试",
+							"isList": true,
+							"name": "spuList",
+							"type": "Api_NodegetImageList_Params"
+						},
+						{
+							"desc": "内容信息 本字段为动态数据类型, 可能类型为以下种类:SegmentInfo, TextInfo, VideoInfo, ImageInfo, SpuInfo, ",
+							"isList": true,
+							"name": "dynamicEntityList",
+							"type": "Api_DynamicEntity",
+							"extInfo": {
+								"keyValue": [
+									{
+										"key": "SegmentInfo",
+										"value": "Api_NodeSEGMENT_SegmentInfo"
+									},
+									{
+										"key": "TextInfo",
+										"value": "Api_NodeTEXT_TextInfo"
+									},
+									{
+										"key": "VideoInfo",
+										"value": "Api_NodeVIDEO_VideoInfo"
+									}
+								]
+							}
+						}
+					],
+					"groupName": "node_time",
+					"name": "Api_NodeCOVERIMAGE_CoverImageInfo"
+				},
+				{
+					"fieldList": [
+						{
+							"desc": "spuId",
+							"isList": false,
+							"name": "spuId",
+							"type": "int"
+						},
+						{
+							"desc": "contentType",
+							"isList": false,
+							"name": "contentType",
+							"type": "string"
+						},
+						{
+							"desc": "分页",
+							"isList": false,
+							"name": "page",
+							"type": "Api_NodeNEWCROWDFUNDING_PageParameter"
+						}
+					],
+					"groupName": "node_time",
+					"name": "Api_NodegetImageList_Params"
+				},
+				{
+					"fieldList": [
+						{
+							"desc": "记录偏移量",
+							"isList": false,
+							"name": "offset",
+							"type": "int"
+						},
+						{
+							"desc": "返回记录最大数量",
+							"isList": false,
+							"name": "limit",
+							"type": "int"
+						}
+					],
+					"groupName": "node_time",
+					"name": "Api_NodeNEWCROWDFUNDING_PageParameter"
+				},
+				{
+					"fieldList": [
+						{
+							"desc": "segment链接",
+							"isList": false,
+							"name": "url",
+							"type": "string"
+						}
+					],
+					"groupName": "node_time",
+					"name": "Api_NodeSEGMENT_SegmentInfo"
+				},
+				{
+					"fieldList": [
+						{
+							"desc": "文字",
+							"isList": false,
+							"name": "text",
+							"type": "string"
+						}
+					],
+					"groupName": "node_time",
+					"name": "Api_NodeTEXT_TextInfo"
+				},
+				{
+					"fieldList": [
+						{
+							"desc": "视频id",
+							"isList": false,
+							"name": "videoId",
+							"type": "string"
+						}
+					],
+					"groupName": "node_time",
+					"name": "Api_NodeVIDEO_VideoInfo"
+				},
+				{
+					"fieldList": [
+						{
+							"desc": "动态类型的类型名",
+							"isList": false,
+							"name": "typeName",
+							"type": "string"
+						},
+						{
+							"desc": "动态类型实体",
+							"isList": false,
+							"name": "entity",
+							"type": "<T>"
+						}
+					],
+					"groupName": "node_time",
+					"name": "Api_DynamicEntity"
+				}
+			],
+			"returnType": "Api_NodeCOVERIMAGE_CoverImageInfo",
+			"securityLevel": "Anonym",
+			"state": "OPEN"
+		}
+	],
+	"codeList": [
+		{
+			"code": "52800001",
+			"desc": "当前众筹活动项不存在",
+			"isDesign": true,
+			"name": "CROWDFUNDING_NOT_EXIST_ERROR_52800001"
+		},
+		{
+			"code": "52800002",
+			"desc": "当前众筹活动项不存在122",
+			"isDesign": true,
+			"name": "CROWDFUNDING_NOT_EXIST_ERROR_52800002"
+		},
+		{
+			"code": "52800003",
+			"desc": "当前众筹活动项不存在333",
+			"isDesign": true,
+			"name": "CROWDFUNDING_NOT_EXIST_ERROR_52800003"
+		}
+	]
+}
